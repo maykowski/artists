@@ -100,10 +100,10 @@ angular.module('starter', ['ionic'])
 
 .controller('ListController', ['$scope', '$http', '$state',
     function($scope, $http, $state) {
-    $http.get('js/data.json').success(function(data) {
-      $scope.artists = data.artists;
-      $scope.whichartist=$state.params.aId;
-      $scope.data = { showDelete: false, showReorder: false };
+        $http.get('js/data.json').success(function(data) {
+            $scope.artists = data.artists;
+            $scope.whichartist=$state.params.aId;
+            $scope.data = { showDelete: false, showReorder: false };
 
       $scope.onItemDelete = function(item) {
         $scope.artists.splice($scope.artists.indexOf(item), 1);
