@@ -62,3 +62,30 @@ body {
   font-size: 2rem;
   font-weight: 200;
 }
+
+
+label.search{
+  /*background-color: red;*/
+  border:1px solid white!important;
+
+}
+
+input.search-input{
+  color:#fff;
+  /*border:1px solid white;*/
+}
+
+.ion-search{
+  font-size:20px;
+}
+input::-webkit-input-placeholder{
+  color:#fff;
+}
+
+input:focus::-webkit-input-placeholder{
+  color: #c6c8c8;
+}
+
+/*label.search{*/
+  /*border:1px solid white;*/
+/*}*/
