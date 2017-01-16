@@ -70,22 +70,46 @@ label.search{
 
 }
 
-input.search-input{
+.search-input{
   color:#fff;
-  /*border:1px solid white;*/
 }
 
 .ion-search{
   font-size:20px;
 }
-input::-webkit-input-placeholder{
+.search-input::-webkit-input-placeholder{
   color:#fff;
 }
 
-input:focus::-webkit-input-placeholder{
+.search-input:focus::-webkit-input-placeholder{
   color: #c6c8c8;
 }
 
-/*label.search{*/
-  /*border:1px solid white;*/
-/*}*/
+
+.search-cancel.ng-hide-add {
+  transition: all 0.2s linear;
+}
+
+.search-cancel.ng-hide-add.ng-hide-add-active {
+  transform:translateX(100px);
+}
+
+.search-cancel.ng-hide-remove {
+  transform:translateX(0);
+  transition: all 0.2s linear;
+}
+
+.search-cancel.ng-hide-remove{
+  transform:translateX(100px);
+}
+
+.search-cancel.ng-hide-remove-active {
+  transform:translateX(0);
+}
+
+.item-divider {
+  background-color: #417d9a;
+  color:#fff;
+  border:none;
+}
+

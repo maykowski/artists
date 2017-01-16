@@ -7,11 +7,12 @@
         </button>
     </ion-nav-buttons>
 
-    <ion-header-bar class="bar bar-subheader item-input-inset bar-positive" align-title="center">
+    <ion-header-bar class="bar bar-subheader item-input-inset bar-positive" align-title="center" ng-init="showCancel=false">
         <label class="item-input-wrapper bar-positive search">
             <i class="icon ion-search placeholder-icon-stable"></i>
-            <input type="search" ng-model="query" class="search-input" placeholder="Search">
+            <input type="search" ng-model="query" class="search-input" placeholder="Search" ng-click="showCancel=true;" ng-blur="showCancel=false;">
         </label>
+        <button ng-show="showCancel" ng-click="showCancel=false;query='';" class="button button-clear search-cancel">Cancel</button>
     </ion-header-bar>
 
     <ion-content
