@@ -1,4 +1,4 @@
-<ion-view view-title="Artist List">
+<ion-view view-title="Patients">
 
     <ion-nav-buttons side="right">
         <button
@@ -22,14 +22,15 @@
         <ion-list
                 show-delete="data.showDelete"
                 show-reorder="data.showReorder">
-            <ion-item ng-class="{'star': item.star}" ng-repeat='item in artists | filter: query' class="item-thumbnail-left item-icon-right
-      item-text-wrap" href="#/tab/list/{{item.shortname}}">
-                <img ng-src="img/{{item.shortname}}_tn.jpg" alt="{{ item.name }} Photo">
+            <ion-item ng-class="{'star': item.star}" ng-repeat="item in patients | filter: query" class="item-thumbnail-left item-icon-right
+      item-text-wrap" href="#/tab/list/{{item.name}}">
+                <img ng-src="img/{{item.sex}}.png" alt="{{ item.name }} Photo">
                 <i class="icon ion-chevron-right icon-accessory"></i>
-                <h2>{{item.name}}</h2>
-                <h3>{{item.reknown}}</h3>
-                <p>{{item.bio | limitTo: 100}}
-                    {{ item.bio.length > 150 ? '&hellip;' : '' }}</p>
+                <h3>{{item.name}}</h3>
+                <h2>{{item.address}}</h2>
+                <h2>Last visit: {{item.last_visit}}</h2>
+                <h2>Age: {{item.age}}</h2>
+
                 <button class="button button-clear icon ion-star button-assertive" ng-click="toggleStar(item)" ng-show="item.star"></button>
                 <ion-option-button class="button-dark" ng-click="toggleStar(item)">
                     <i class="icon ion-star"></i>

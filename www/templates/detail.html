@@ -1,11 +1,11 @@
 <ion-view>
     <ion-nav-title class="bar-positive">
-        <h2 class="title">{{whichartist}}</h2>
+        <h2 class="title">{{whichpatient}}</h2>
     </ion-nav-title>
     <ion-content>
         <ion-list class="list-inset">
             <ion-item class="item-text-wrap"
-                      ng-repeat="item in artists | filter: { shortname: whichartist }">
+                      ng-repeat="item in patients | filter: { shortname: whichpatient }">
                 <img ng-src="img/{{item.shortname}}_tn.jpg"
                      alt="{{ item.name }} Photo">
                 <h2>{{ item.name }}</h2>

@@ -101,17 +101,17 @@ angular.module('starter', ['ionic', 'ion-sticky'])
 .controller('ListController', ['$scope', '$http', '$state',
     function($scope, $http, $state) {
         $http.get('js/data.json').success(function(data) {
-            $scope.artists = data.artists;
-            $scope.whichartist=$state.params.aId;
+            $scope.patients = data.patients;
+            $scope.whichpatient=$state.params.aId;
             $scope.data = { showDelete: false, showReorder: false };
 
       $scope.onItemDelete = function(item) {
-        $scope.artists.splice($scope.artists.indexOf(item), 1);
+        $scope.patients.splice($scope.patients.indexOf(item), 1);
       }
 
       $scope.doRefresh =function() {
       $http.get('js/data.json').success(function(data) {
-          $scope.artists = data.artists;
+          $scope.patients = data.patients;
           $scope.$broadcast('scroll.refreshComplete'); 
         });
       }
@@ -121,8 +121,8 @@ angular.module('starter', ['ionic', 'ion-sticky'])
       }
 
       $scope.moveItem = function(item, fromIndex, toIndex) {
-        $scope.artists.splice(fromIndex, 1);
-        $scope.artists.splice(toIndex, 0, item);
+        $scope.patients.splice(fromIndex, 1);
+        $scope.patients.splice(toIndex, 0, item);
       };
     });
 }]);
