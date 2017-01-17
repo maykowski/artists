@@ -1,0 +1,114 @@
+{
+  "visits": [
+    {
+      "patient_id":748392763,
+      "visit_date": "2015-11-11"
+    },
+    {
+      "patient_id":748392763,
+      "visit_date": "2016-09-22"
+    },
+    {
+      "patient_id":748392763,
+      "visit_date": "2016-08-30"
+    },
+    {
+      "patient_id":748392763,
+      "visit_date": "2016-06-25"
+    },
+    {
+      "patient_id":748392763,
+      "visit_date": "2016-05-15"
+    },
+    {
+      "patient_id":748392763,
+      "visit_date": "2016-04-09"
+    },{
+      "patient_id":748392763,
+      "visit_date": "2016-03-31"
+    },
+    {
+      "patient_id":748392763,
+      "visit_date": "2016-01-15"
+    },
+    {
+      "patient_id":748392763,
+      "visit_date": "2015-12-08"
+    },
+    {
+      "patient_id":748392763,
+      "visit_date": "2015-11-20"
+    },
+    {
+      "patient_id":748392763,
+      "visit_date": "2015-10-05"
+    },
+    {
+      "patient_id":748392763,
+      "visit_date": "2015-09-05"
+    },
+    {
+      "patient_id":748392763,
+      "visit_date": "2015-08-14"
+    },
+    {
+      "patient_id":748392763,
+      "visit_date": "2015-07-18"
+    },
+    {
+      "patient_id":748392763,
+      "visit_date": "2015-06-01"
+    },
+    {
+      "patient_id":748392763,
+      "visit_date": "2015-05-23"
+    },
+    {
+      "patient_id":946386401,
+      "visit_date": "2015-03-28"
+    },
+    {
+      "patient_id":946386401,
+      "visit_date": "2015-01-07"
+    },
+    {
+      "patient_id":946386401,
+      "visit_date": "2016-11-11"
+    },
+    {
+      "patient_id":946386401,
+      "visit_date": "2016-09-22"
+    },
+    {
+      "patient_id":748392763,
+      "visit_date": "2016-08-30"
+    },
+    {
+      "patient_id":946386401,
+      "visit_date": "2016-06-25"
+    },
+    {
+      "patient_id":946386401,
+      "visit_date": "2016-05-15"
+    },
+    {
+      "patient_id":946386401,
+      "visit_date": "2016-04-09"
+    },{
+      "patient_id":946386401,
+      "visit_date": "2016-03-31"
+    },
+    {
+      "patient_id":754932309,
+      "visit_date": "2016-05-15"
+    },
+    {
+      "patient_id":754932309,
+      "visit_date": "2016-04-09"
+    },{
+      "patient_id":754932309,
+      "visit_date": "2016-03-31"
+    }
+  ]
+
+}

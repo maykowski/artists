@@ -64,13 +64,18 @@ body {
 }
 
 
+/*Custom*/
+
+h1 {
+    font-size:2.0em;
+}
+
 label.search{
-  /*background-color: red;*/
   border:1px solid white!important;
 
 }
 
-.search-input{
+input.search-input{
   color:#fff;
 }
 
@@ -111,5 +116,11 @@ label.search{
   background-color: #417d9a;
   color:#fff;
   border:none;
+}
+
+.avatar-img{
+    width:100%;
+    max-height:200px;
+    max-width:200px;
 }
 
