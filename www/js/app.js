@@ -60,6 +60,15 @@ angular.module('starter', ['ionic', 'ion-sticky'])
                     }
                 }
             })
+            .state('tabs.visit', {
+                url: '/visit/:visitId',
+                views: {
+                    'list-tab': {
+                        templateUrl: 'templates/visit.html',
+                        controller: 'VisitController'
+                    }
+                }
+            })
 
             .state('tabs.calendar', {
                 url: '/calendar',
@@ -131,12 +140,31 @@ angular.module('starter', ['ionic', 'ion-sticky'])
             $http.get('js/data.json').success(function (data) {
                 $scope.whichpatient = $filter('filter')(data.patients, {id: $state.params.aId})[0];
             });
-            $http.get('js/visit.json').success(function (data) {
+            $http.get('js/visits.json').success(function (data) {
                 $scope.visits = $filter('filter')(data.visits, {patient_id: $state.params.aId});
 
                 $scope.doRefresh = function () {
                     $http.get('js/visit.json').success(function (data) {
                         $scope.visits = data.visits;
+                        $scope.$broadcast('scroll.refreshComplete');
+                    });
+                }
+            });
+        }])
+    .controller('VisitController', ['$scope', '$http', '$state', '$filter',
+        function ($scope, $http, $state, $filter) {
+
+            $http.get('js/visits.json').success(function (data) {
+                $scope.whichvisit = $filter('filter')(data.visits, {id: $state.params.visitId})[0];
+
+
+            });
+            $http.get('js/results.json').success(function (data) {
+                $scope.results = $filter('filter')(data.results, {visit_id: $state.params.visitId})[0];
+                console.log($scope.results.hematology)
+                $scope.doRefresh = function () {
+                    $http.get('js/visits.json').success(function (data) {
+                        $scope.results = data.results;
                         $scope.$broadcast('scroll.refreshComplete');
                     });
                 }

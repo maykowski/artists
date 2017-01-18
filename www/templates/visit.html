@@ -1,0 +1,44 @@
+<ion-view>
+    <ion-nav-title class="bar-positive">
+        <h2 class="title">{{whichvisit.visit_date}}</h2>
+    </ion-nav-title>
+    <ion-content ion-sticky ion-sticky-class="stable">
+        <ion-list class="list-inset">
+            <ion-item class="item-text-wrap">
+                <div class="row">
+                    <div class="right col">
+                        <h3 class="text-center">Facility: {{ whichvisit.location }}</h3>
+                    </div>
+                </div>
+
+                </div>
+            </ion-item>
+        </ion-list>
+        <div ng-show="results">
+            <!--<h2 class="title text-center">Results</h2>-->
+            <ion-list>
+                <ion-item class="item-divider" ng-show="results.hematology.length > 0">
+                    <div class="row">
+                        <div class="text-left col col-50">Hematology</div>
+                        <div class="text-center col">Result</div>
+                        <div class="text-right col">Ref. range</div>
+                    </div>
+                </ion-item>
+
+                <ion-item ng-repeat="result in results.hematology">
+
+                    <div class="row">
+                        <div class="text-left col-50">{{result.name}}</div>
+                        <i class="icon ion-arrow-up-a assertive" ng-show="result.ref==1"></i>
+                        <i class="icon ion-arrow-down-a assertive" ng-show="result.ref==-1"></i>
+                        <div class="text-center col">{{result.result}}</div>
+                        <div class="text-right col">other</div>
+                    </div>
+                </ion-item>
+                <!--<ion-item ng-repeat="result in results.immunology">{{result.name}}</ion-item>-->
+
+            </ion-list>
+        </div>
+        <h3 ng-show="visits.length == 0" class="assertive text-center">No visits</h3>
+    </ion-content>
+</ion-view>
