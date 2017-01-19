@@ -32,11 +32,11 @@ angular.module('starter', ['ionic', 'ion-sticky'])
                 templateUrl: 'templates/tabs.html'
             })
 
-            .state('tabs.home', {
-                url: '/home',
+            .state('tabs.info', {
+                url: '/info',
                 views: {
-                    'home-tab': {
-                        templateUrl: 'templates/home.html'
+                    'info-tab': {
+                        templateUrl: 'templates/info.html'
                     }
                 }
             })
@@ -70,18 +70,18 @@ angular.module('starter', ['ionic', 'ion-sticky'])
                 }
             })
 
-            .state('tabs.calendar', {
-                url: '/calendar',
-                views: {
-                    'calendar-tab': {
-                        templateUrl: 'templates/calendar.html',
-                        controller: 'CalendarController'
-                    }
-                }
-            })
+            // .state('tabs.calendar', {
+            //     url: '/calendar',
+            //     views: {
+            //         'calendar-tab': {
+            //             templateUrl: 'templates/calendar.html',
+            //             controller: 'CalendarController'
+            //         }
+            //     }
+            // })
 
 
-        $urlRouterProvider.otherwise('/tab/home');
+        $urlRouterProvider.otherwise('/tab/list');
     })
 
     .controller('CalendarController', ['$scope', '$http', '$state',
@@ -156,17 +156,38 @@ angular.module('starter', ['ionic', 'ion-sticky'])
 
             $http.get('js/visits.json').success(function (data) {
                 $scope.whichvisit = $filter('filter')(data.visits, {id: $state.params.visitId})[0];
+                // $scope.hematology = $scope.whichvisit.results[0].hematology;
 
+                $http.get('js/reference.json').success(function (data) {
+                    // var reference = data.reference[0];
+                    //console.log(data.reference);
+                    // console.log($filter('filter')(data.reference[0], "{name:'RBC'}"));
+                    angular.forEach($scope.whichvisit.results, function (value, key) {
+                        angular.forEach(value.results, function (value2, key2) {
+                            // console.log(key2 + ': ' + value2.name);
+                            // console.log($filter('filter')(data.reference, value2.name));
+                            var ref = $filter('filter')(data.reference, value2.name);
+                            value2.min = ref[0].min;
+                            value2.max = ref[0].max;
+                            // console.log($scope.whichvisit)
 
-            });
-            $http.get('js/results.json').success(function (data) {
-                $scope.results = $filter('filter')(data.results, {visit_id: $state.params.visitId})[0];
-                console.log($scope.results.hematology)
-                $scope.doRefresh = function () {
-                    $http.get('js/visits.json').success(function (data) {
-                        $scope.results = data.results;
-                        $scope.$broadcast('scroll.refreshComplete');
+                        });
                     });
-                }
+                });
+
+
             });
+            // $http.get('js/results.json').success(function (data) {
+            //     $scope.results = $filter('filter')(data.results, {visit_id: $state.params.visitId})[0];
+            //     // console.log($scope.results.hematology)
+            //     $scope.doRefresh = function () {
+            //         $http.get('js/visits.json').success(function (data) {
+            //             $scope.results = data.results;
+            //             $scope.$broadcast('scroll.refreshComplete');
+            //         });
+            //     }
+            // });
+            // $http.get('js/reference.json').success(function (data) {
+            //     console.log(data);
+            // });
         }]);
