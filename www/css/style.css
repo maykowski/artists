@@ -1,5 +1,16 @@
 /* Empty. Add your own CSS if you like */
 
+@font-face {
+  font-family: 'ERASBD';
+  src: url('../fonts/ERASBD.eot');
+  src: url('../fonts/ERASBD.eot') format('embedded-opentype'),
+  url('../fonts/ERASBD.woff2') format('woff2'),
+  url('../fonts/ERASBD.woff') format('woff'),
+  url('../fonts/ERASBD.ttf') format('truetype'),
+  url('../fonts/ERASBD.svg#ERASBD') format('svg');
+}
+
+
 body {
   cursor: url('http://ionicframework.com/img/finger.png');
 }
@@ -34,12 +45,13 @@ body {
 }
 
 .logo{
-  height:auto;width:130%;
+  height:auto;width:100%;
   padding:0;
 }
 
 .tagline {
   font-size: 1.4rem;
+  /*font-family: "Sri-TSCRegular", serif*/
 }
 
 .tagline2 {
