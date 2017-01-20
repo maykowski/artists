@@ -42,9 +42,8 @@
                 </div>
 
         <div ng-show="visits.length > 0">
-            <h2 class="title text-center">Visits</h2>
             <ion-list>
-                <ion-item class="item-divider text-center" ng-show="(filtered = (visits | filter:'2016')).length > 0">2016</ion-item>
+                <ion-item class="item-divider text-center" ng-show="(filtered = (visits | filter:'2016')).length > 0">Visits 2016</ion-item>
                 <ion-item ng-repeat="visit in visits | filter:'2016' | orderBy: '-visit_date' " href="#/tab/visit/{{visit.id}}">
                        {{visit.visit_date}}
                         <div class="text-right item-icon-right">
@@ -53,7 +52,7 @@
                     </div>
 
                 </ion-item>
-                <ion-item class="item-divider text-center" ng-show="(filtered = (visits | filter:'2015')).length > 0">2015</ion-item>
+                <ion-item class="item-divider text-center" ng-show="(filtered = (visits | filter:'2015')).length > 0">Visits 2015</ion-item>
                 <ion-item ng-repeat="visit in visits | filter:'2015'">
                     {{visit.visit_date}}
                     <div class="text-right item-icon-right">

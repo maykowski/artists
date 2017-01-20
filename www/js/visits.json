@@ -28,7 +28,12 @@
             {
               "name": "Platelets",
               "result": 130
-            },
+            }
+          ]
+        },
+        {
+          "groupName": "biochemistry",
+          "results": [
             {
               "name": "Cholesterol Total",
               "result": 210
@@ -36,12 +41,7 @@
             {
               "name": "Iron",
               "result": 12
-            }
-          ]
-        },
-        {
-          "groupName":"group2",
-          "results": [
+            },
             {
               "name": "Bilirubine",
               "result": 0.8
@@ -53,7 +53,12 @@
             {
               "name": "CRP",
               "result": 4
-            },
+            }
+          ]
+        },
+        {
+          "groupName": "hormonal test",
+          "results": [
             {
               "name": "TSH",
               "result": 2.25
@@ -61,12 +66,7 @@
             {
               "name": "fT4",
               "result": 15
-            }
-          ]
-        },
-        {
-          "groupName":"group3",
-          "results": [
+            },
             {
               "name": "fT3",
               "result": 3.5
@@ -78,16 +78,16 @@
             {
               "name": "PSA",
               "result": 4.2
-            },
-            {
-              "name": "PT",
-              "result": 13
             }
           ]
         },
         {
-          "groupName":"group4",
+          "groupName": "coagulology",
           "results": [
+            {
+              "name": "PT",
+              "result": 13
+            },
             {
               "name": "INR",
               "result": 0.7
@@ -112,163 +112,2918 @@
       "id": 2,
       "patient_id": 748392763,
       "visit_date": "2016-09-22",
-      "location": "10 St George's Rd, London"
+      "location": "10 St George's Rd, London",
+      "results": [
+        {
+          "groupName": "hematology",
+          "results": [
+            {
+              "name": "RBC",
+              "result": 6.2
+            },
+            {
+              "name": "WBC",
+              "result": 3.9
+            },
+            {
+              "name": "Hematocrit",
+              "result": 42
+            },
+            {
+              "name": "Hemoglobin",
+              "result": 12.5
+            },
+            {
+              "name": "Platelets",
+              "result": 130
+            }
+          ]
+        },
+        {
+          "groupName": "biochemistry",
+          "results": [
+            {
+              "name": "Cholesterol Total",
+              "result": 210
+            },
+            {
+              "name": "Iron",
+              "result": 12
+            },
+            {
+              "name": "Bilirubine",
+              "result": 0.8
+            },
+            {
+              "name": "Creatinine",
+              "result": 1.3
+            },
+            {
+              "name": "CRP",
+              "result": 4
+            }
+          ]
+        },
+        {
+          "groupName": "hormonal test",
+          "results": [
+            {
+              "name": "TSH",
+              "result": 2.25
+            },
+            {
+              "name": "fT4",
+              "result": 15
+            },
+            {
+              "name": "fT3",
+              "result": 3.5
+            },
+            {
+              "name": "Testosteron",
+              "result": 54.3
+            },
+            {
+              "name": "PSA",
+              "result": 4.2
+            }
+          ]
+        },
+        {
+          "groupName": "coagulology",
+          "results": [
+            {
+              "name": "PT",
+              "result": 13
+            },
+            {
+              "name": "INR",
+              "result": 0.7
+            },
+            {
+              "name": "APTT",
+              "result": 54
+            },
+            {
+              "name": "D-dimer",
+              "result": 325
+            },
+            {
+              "name": "Fibrinogen",
+              "result": 1.6
+            }
+          ]
+        }
+      ]
+
     },
     {
       "id": 3,
       "patient_id": 748392763,
       "visit_date": "2016-08-30",
-      "location": " London Rd, Southend-on-Sea"
+      "location": " London Rd, Southend-on-Sea",
+      "results": [
+        {
+          "groupName": "hematology",
+          "results": [
+            {
+              "name": "RBC",
+              "result": 6.2
+            },
+            {
+              "name": "WBC",
+              "result": 3.9
+            },
+            {
+              "name": "Hematocrit",
+              "result": 42
+            },
+            {
+              "name": "Hemoglobin",
+              "result": 12.5
+            },
+            {
+              "name": "Platelets",
+              "result": 130
+            }
+          ]
+        },
+        {
+          "groupName": "biochemistry",
+          "results": [
+            {
+              "name": "Cholesterol Total",
+              "result": 210
+            },
+            {
+              "name": "Iron",
+              "result": 12
+            },
+            {
+              "name": "Bilirubine",
+              "result": 0.8
+            },
+            {
+              "name": "Creatinine",
+              "result": 1.3
+            },
+            {
+              "name": "CRP",
+              "result": 4
+            }
+          ]
+        },
+        {
+          "groupName": "hormonal test",
+          "results": [
+            {
+              "name": "TSH",
+              "result": 2.25
+            },
+            {
+              "name": "fT4",
+              "result": 15
+            },
+            {
+              "name": "fT3",
+              "result": 3.5
+            },
+            {
+              "name": "Testosteron",
+              "result": 54.3
+            },
+            {
+              "name": "PSA",
+              "result": 4.2
+            }
+          ]
+        },
+        {
+          "groupName": "coagulology",
+          "results": [
+            {
+              "name": "PT",
+              "result": 13
+            },
+            {
+              "name": "INR",
+              "result": 0.7
+            },
+            {
+              "name": "APTT",
+              "result": 54
+            },
+            {
+              "name": "D-dimer",
+              "result": 325
+            },
+            {
+              "name": "Fibrinogen",
+              "result": 1.6
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 4,
       "patient_id": 748392763,
       "visit_date": "2016-06-25",
-      "location": "10 St George's Rd, London"
+      "location": "10 St George's Rd, London",
+      "results": [
+        {
+          "groupName": "hematology",
+          "results": [
+            {
+              "name": "RBC",
+              "result": 6.2
+            },
+            {
+              "name": "WBC",
+              "result": 3.9
+            },
+            {
+              "name": "Hematocrit",
+              "result": 42
+            },
+            {
+              "name": "Hemoglobin",
+              "result": 12.5
+            },
+            {
+              "name": "Platelets",
+              "result": 130
+            }
+          ]
+        },
+        {
+          "groupName": "biochemistry",
+          "results": [
+            {
+              "name": "Cholesterol Total",
+              "result": 210
+            },
+            {
+              "name": "Iron",
+              "result": 12
+            },
+            {
+              "name": "Bilirubine",
+              "result": 0.8
+            },
+            {
+              "name": "Creatinine",
+              "result": 1.3
+            },
+            {
+              "name": "CRP",
+              "result": 4
+            }
+          ]
+        },
+        {
+          "groupName": "hormonal test",
+          "results": [
+            {
+              "name": "TSH",
+              "result": 2.25
+            },
+            {
+              "name": "fT4",
+              "result": 15
+            },
+            {
+              "name": "fT3",
+              "result": 3.5
+            },
+            {
+              "name": "Testosteron",
+              "result": 54.3
+            },
+            {
+              "name": "PSA",
+              "result": 4.2
+            }
+          ]
+        },
+        {
+          "groupName": "coagulology",
+          "results": [
+            {
+              "name": "PT",
+              "result": 13
+            },
+            {
+              "name": "INR",
+              "result": 0.7
+            },
+            {
+              "name": "APTT",
+              "result": 54
+            },
+            {
+              "name": "D-dimer",
+              "result": 325
+            },
+            {
+              "name": "Fibrinogen",
+              "result": 1.6
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 5,
       "patient_id": 748392763,
       "visit_date": "2016-05-15",
-      "location": "Wimpole St, Marylebone, London"
+      "location": "Wimpole St, Marylebone, London",
+      "results": [
+        {
+          "groupName": "hematology",
+          "results": [
+            {
+              "name": "RBC",
+              "result": 6.2
+            },
+            {
+              "name": "WBC",
+              "result": 3.9
+            },
+            {
+              "name": "Hematocrit",
+              "result": 42
+            },
+            {
+              "name": "Hemoglobin",
+              "result": 12.5
+            },
+            {
+              "name": "Platelets",
+              "result": 130
+            }
+          ]
+        },
+        {
+          "groupName": "biochemistry",
+          "results": [
+            {
+              "name": "Cholesterol Total",
+              "result": 210
+            },
+            {
+              "name": "Iron",
+              "result": 12
+            },
+            {
+              "name": "Bilirubine",
+              "result": 0.8
+            },
+            {
+              "name": "Creatinine",
+              "result": 1.3
+            },
+            {
+              "name": "CRP",
+              "result": 4
+            }
+          ]
+        },
+        {
+          "groupName": "hormonal test",
+          "results": [
+            {
+              "name": "TSH",
+              "result": 2.25
+            },
+            {
+              "name": "fT4",
+              "result": 15
+            },
+            {
+              "name": "fT3",
+              "result": 3.5
+            },
+            {
+              "name": "Testosteron",
+              "result": 54.3
+            },
+            {
+              "name": "PSA",
+              "result": 4.2
+            }
+          ]
+        },
+        {
+          "groupName": "coagulology",
+          "results": [
+            {
+              "name": "PT",
+              "result": 13
+            },
+            {
+              "name": "INR",
+              "result": 0.7
+            },
+            {
+              "name": "APTT",
+              "result": 54
+            },
+            {
+              "name": "D-dimer",
+              "result": 325
+            },
+            {
+              "name": "Fibrinogen",
+              "result": 1.6
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 6,
       "patient_id": 748392763,
       "visit_date": "2016-04-09",
-      "location": "10 St George's Rd, London"
+      "location": "10 St George's Rd, London",
+      "results": [
+        {
+          "groupName": "hematology",
+          "results": [
+            {
+              "name": "RBC",
+              "result": 6.2
+            },
+            {
+              "name": "WBC",
+              "result": 3.9
+            },
+            {
+              "name": "Hematocrit",
+              "result": 42
+            },
+            {
+              "name": "Hemoglobin",
+              "result": 12.5
+            },
+            {
+              "name": "Platelets",
+              "result": 130
+            }
+          ]
+        },
+        {
+          "groupName": "biochemistry",
+          "results": [
+            {
+              "name": "Cholesterol Total",
+              "result": 210
+            },
+            {
+              "name": "Iron",
+              "result": 12
+            },
+            {
+              "name": "Bilirubine",
+              "result": 0.8
+            },
+            {
+              "name": "Creatinine",
+              "result": 1.3
+            },
+            {
+              "name": "CRP",
+              "result": 4
+            }
+          ]
+        },
+        {
+          "groupName": "hormonal test",
+          "results": [
+            {
+              "name": "TSH",
+              "result": 2.25
+            },
+            {
+              "name": "fT4",
+              "result": 15
+            },
+            {
+              "name": "fT3",
+              "result": 3.5
+            },
+            {
+              "name": "Testosteron",
+              "result": 54.3
+            },
+            {
+              "name": "PSA",
+              "result": 4.2
+            }
+          ]
+        },
+        {
+          "groupName": "coagulology",
+          "results": [
+            {
+              "name": "PT",
+              "result": 13
+            },
+            {
+              "name": "INR",
+              "result": 0.7
+            },
+            {
+              "name": "APTT",
+              "result": 54
+            },
+            {
+              "name": "D-dimer",
+              "result": 325
+            },
+            {
+              "name": "Fibrinogen",
+              "result": 1.6
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 7,
       "patient_id": 748392763,
       "visit_date": "2016-03-31",
-      "location": " London Rd, Southend-on-Sea"
+      "location": " London Rd, Southend-on-Sea",
+      "results": [
+        {
+          "groupName": "hematology",
+          "results": [
+            {
+              "name": "RBC",
+              "result": 6.2
+            },
+            {
+              "name": "WBC",
+              "result": 3.9
+            },
+            {
+              "name": "Hematocrit",
+              "result": 42
+            },
+            {
+              "name": "Hemoglobin",
+              "result": 12.5
+            },
+            {
+              "name": "Platelets",
+              "result": 130
+            }
+          ]
+        },
+        {
+          "groupName": "biochemistry",
+          "results": [
+            {
+              "name": "Cholesterol Total",
+              "result": 210
+            },
+            {
+              "name": "Iron",
+              "result": 12
+            },
+            {
+              "name": "Bilirubine",
+              "result": 0.8
+            },
+            {
+              "name": "Creatinine",
+              "result": 1.3
+            },
+            {
+              "name": "CRP",
+              "result": 4
+            }
+          ]
+        },
+        {
+          "groupName": "hormonal test",
+          "results": [
+            {
+              "name": "TSH",
+              "result": 2.25
+            },
+            {
+              "name": "fT4",
+              "result": 15
+            },
+            {
+              "name": "fT3",
+              "result": 3.5
+            },
+            {
+              "name": "Testosteron",
+              "result": 54.3
+            },
+            {
+              "name": "PSA",
+              "result": 4.2
+            }
+          ]
+        },
+        {
+          "groupName": "coagulology",
+          "results": [
+            {
+              "name": "PT",
+              "result": 13
+            },
+            {
+              "name": "INR",
+              "result": 0.7
+            },
+            {
+              "name": "APTT",
+              "result": 54
+            },
+            {
+              "name": "D-dimer",
+              "result": 325
+            },
+            {
+              "name": "Fibrinogen",
+              "result": 1.6
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 8,
       "patient_id": 748392763,
       "visit_date": "2016-01-15",
-      "location": "33-34 Bury St, London"
+      "location": "33-34 Bury St, London",
+      "results": [
+        {
+          "groupName": "hematology",
+          "results": [
+            {
+              "name": "RBC",
+              "result": 6.2
+            },
+            {
+              "name": "WBC",
+              "result": 3.9
+            },
+            {
+              "name": "Hematocrit",
+              "result": 42
+            },
+            {
+              "name": "Hemoglobin",
+              "result": 12.5
+            },
+            {
+              "name": "Platelets",
+              "result": 130
+            }
+          ]
+        },
+        {
+          "groupName": "biochemistry",
+          "results": [
+            {
+              "name": "Cholesterol Total",
+              "result": 210
+            },
+            {
+              "name": "Iron",
+              "result": 12
+            },
+            {
+              "name": "Bilirubine",
+              "result": 0.8
+            },
+            {
+              "name": "Creatinine",
+              "result": 1.3
+            },
+            {
+              "name": "CRP",
+              "result": 4
+            }
+          ]
+        },
+        {
+          "groupName": "hormonal test",
+          "results": [
+            {
+              "name": "TSH",
+              "result": 2.25
+            },
+            {
+              "name": "fT4",
+              "result": 15
+            },
+            {
+              "name": "fT3",
+              "result": 3.5
+            },
+            {
+              "name": "Testosteron",
+              "result": 54.3
+            },
+            {
+              "name": "PSA",
+              "result": 4.2
+            }
+          ]
+        },
+        {
+          "groupName": "coagulology",
+          "results": [
+            {
+              "name": "PT",
+              "result": 13
+            },
+            {
+              "name": "INR",
+              "result": 0.7
+            },
+            {
+              "name": "APTT",
+              "result": 54
+            },
+            {
+              "name": "D-dimer",
+              "result": 325
+            },
+            {
+              "name": "Fibrinogen",
+              "result": 1.6
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 9,
       "patient_id": 748392763,
       "visit_date": "2015-12-08",
-      "location": "Wimpole St, Marylebone, London"
+      "location": "Wimpole St, Marylebone, London",
+      "results": [
+        {
+          "groupName": "hematology",
+          "results": [
+            {
+              "name": "RBC",
+              "result": 6.2
+            },
+            {
+              "name": "WBC",
+              "result": 3.9
+            },
+            {
+              "name": "Hematocrit",
+              "result": 42
+            },
+            {
+              "name": "Hemoglobin",
+              "result": 12.5
+            },
+            {
+              "name": "Platelets",
+              "result": 130
+            }
+          ]
+        },
+        {
+          "groupName": "biochemistry",
+          "results": [
+            {
+              "name": "Cholesterol Total",
+              "result": 210
+            },
+            {
+              "name": "Iron",
+              "result": 12
+            },
+            {
+              "name": "Bilirubine",
+              "result": 0.8
+            },
+            {
+              "name": "Creatinine",
+              "result": 1.3
+            },
+            {
+              "name": "CRP",
+              "result": 4
+            }
+          ]
+        },
+        {
+          "groupName": "hormonal test",
+          "results": [
+            {
+              "name": "TSH",
+              "result": 2.25
+            },
+            {
+              "name": "fT4",
+              "result": 15
+            },
+            {
+              "name": "fT3",
+              "result": 3.5
+            },
+            {
+              "name": "Testosteron",
+              "result": 54.3
+            },
+            {
+              "name": "PSA",
+              "result": 4.2
+            }
+          ]
+        },
+        {
+          "groupName": "coagulology",
+          "results": [
+            {
+              "name": "PT",
+              "result": 13
+            },
+            {
+              "name": "INR",
+              "result": 0.7
+            },
+            {
+              "name": "APTT",
+              "result": 54
+            },
+            {
+              "name": "D-dimer",
+              "result": 325
+            },
+            {
+              "name": "Fibrinogen",
+              "result": 1.6
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 10,
       "patient_id": 748392763,
       "visit_date": "2015-11-20",
-      "location": "10 St George's Rd, London"
+      "location": "10 St George's Rd, London",
+      "results": [
+        {
+          "groupName": "hematology",
+          "results": [
+            {
+              "name": "RBC",
+              "result": 6.2
+            },
+            {
+              "name": "WBC",
+              "result": 3.9
+            },
+            {
+              "name": "Hematocrit",
+              "result": 42
+            },
+            {
+              "name": "Hemoglobin",
+              "result": 12.5
+            },
+            {
+              "name": "Platelets",
+              "result": 130
+            }
+          ]
+        },
+        {
+          "groupName": "biochemistry",
+          "results": [
+            {
+              "name": "Cholesterol Total",
+              "result": 210
+            },
+            {
+              "name": "Iron",
+              "result": 12
+            },
+            {
+              "name": "Bilirubine",
+              "result": 0.8
+            },
+            {
+              "name": "Creatinine",
+              "result": 1.3
+            },
+            {
+              "name": "CRP",
+              "result": 4
+            }
+          ]
+        },
+        {
+          "groupName": "hormonal test",
+          "results": [
+            {
+              "name": "TSH",
+              "result": 2.25
+            },
+            {
+              "name": "fT4",
+              "result": 15
+            },
+            {
+              "name": "fT3",
+              "result": 3.5
+            },
+            {
+              "name": "Testosteron",
+              "result": 54.3
+            },
+            {
+              "name": "PSA",
+              "result": 4.2
+            }
+          ]
+        },
+        {
+          "groupName": "coagulology",
+          "results": [
+            {
+              "name": "PT",
+              "result": 13
+            },
+            {
+              "name": "INR",
+              "result": 0.7
+            },
+            {
+              "name": "APTT",
+              "result": 54
+            },
+            {
+              "name": "D-dimer",
+              "result": 325
+            },
+            {
+              "name": "Fibrinogen",
+              "result": 1.6
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 11,
       "patient_id": 748392763,
       "visit_date": "2015-10-05",
-      "location": "10 St George's Rd, London"
+      "location": "10 St George's Rd, London",
+      "results": [
+        {
+          "groupName": "hematology",
+          "results": [
+            {
+              "name": "RBC",
+              "result": 6.2
+            },
+            {
+              "name": "WBC",
+              "result": 3.9
+            },
+            {
+              "name": "Hematocrit",
+              "result": 42
+            },
+            {
+              "name": "Hemoglobin",
+              "result": 12.5
+            },
+            {
+              "name": "Platelets",
+              "result": 130
+            }
+          ]
+        },
+        {
+          "groupName": "biochemistry",
+          "results": [
+            {
+              "name": "Cholesterol Total",
+              "result": 210
+            },
+            {
+              "name": "Iron",
+              "result": 12
+            },
+            {
+              "name": "Bilirubine",
+              "result": 0.8
+            },
+            {
+              "name": "Creatinine",
+              "result": 1.3
+            },
+            {
+              "name": "CRP",
+              "result": 4
+            }
+          ]
+        },
+        {
+          "groupName": "hormonal test",
+          "results": [
+            {
+              "name": "TSH",
+              "result": 2.25
+            },
+            {
+              "name": "fT4",
+              "result": 15
+            },
+            {
+              "name": "fT3",
+              "result": 3.5
+            },
+            {
+              "name": "Testosteron",
+              "result": 54.3
+            },
+            {
+              "name": "PSA",
+              "result": 4.2
+            }
+          ]
+        },
+        {
+          "groupName": "coagulology",
+          "results": [
+            {
+              "name": "PT",
+              "result": 13
+            },
+            {
+              "name": "INR",
+              "result": 0.7
+            },
+            {
+              "name": "APTT",
+              "result": 54
+            },
+            {
+              "name": "D-dimer",
+              "result": 325
+            },
+            {
+              "name": "Fibrinogen",
+              "result": 1.6
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 12,
       "patient_id": 748392763,
       "visit_date": "2015-09-05",
-      "location": "33-34 Bury St, London"
+      "location": "33-34 Bury St, London",
+      "results": [
+        {
+          "groupName": "hematology",
+          "results": [
+            {
+              "name": "RBC",
+              "result": 6.2
+            },
+            {
+              "name": "WBC",
+              "result": 3.9
+            },
+            {
+              "name": "Hematocrit",
+              "result": 42
+            },
+            {
+              "name": "Hemoglobin",
+              "result": 12.5
+            },
+            {
+              "name": "Platelets",
+              "result": 130
+            }
+          ]
+        },
+        {
+          "groupName": "biochemistry",
+          "results": [
+            {
+              "name": "Cholesterol Total",
+              "result": 210
+            },
+            {
+              "name": "Iron",
+              "result": 12
+            },
+            {
+              "name": "Bilirubine",
+              "result": 0.8
+            },
+            {
+              "name": "Creatinine",
+              "result": 1.3
+            },
+            {
+              "name": "CRP",
+              "result": 4
+            }
+          ]
+        },
+        {
+          "groupName": "hormonal test",
+          "results": [
+            {
+              "name": "TSH",
+              "result": 2.25
+            },
+            {
+              "name": "fT4",
+              "result": 15
+            },
+            {
+              "name": "fT3",
+              "result": 3.5
+            },
+            {
+              "name": "Testosteron",
+              "result": 54.3
+            },
+            {
+              "name": "PSA",
+              "result": 4.2
+            }
+          ]
+        },
+        {
+          "groupName": "coagulology",
+          "results": [
+            {
+              "name": "PT",
+              "result": 13
+            },
+            {
+              "name": "INR",
+              "result": 0.7
+            },
+            {
+              "name": "APTT",
+              "result": 54
+            },
+            {
+              "name": "D-dimer",
+              "result": 325
+            },
+            {
+              "name": "Fibrinogen",
+              "result": 1.6
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 13,
       "patient_id": 748392763,
       "visit_date": "2015-08-14",
-      "location": "Wimpole St, Marylebone, London"
+      "location": "Wimpole St, Marylebone, London",
+      "results": [
+        {
+          "groupName": "hematology",
+          "results": [
+            {
+              "name": "RBC",
+              "result": 6.2
+            },
+            {
+              "name": "WBC",
+              "result": 3.9
+            },
+            {
+              "name": "Hematocrit",
+              "result": 42
+            },
+            {
+              "name": "Hemoglobin",
+              "result": 12.5
+            },
+            {
+              "name": "Platelets",
+              "result": 130
+            }
+          ]
+        },
+        {
+          "groupName": "biochemistry",
+          "results": [
+            {
+              "name": "Cholesterol Total",
+              "result": 210
+            },
+            {
+              "name": "Iron",
+              "result": 12
+            },
+            {
+              "name": "Bilirubine",
+              "result": 0.8
+            },
+            {
+              "name": "Creatinine",
+              "result": 1.3
+            },
+            {
+              "name": "CRP",
+              "result": 4
+            }
+          ]
+        },
+        {
+          "groupName": "hormonal test",
+          "results": [
+            {
+              "name": "TSH",
+              "result": 2.25
+            },
+            {
+              "name": "fT4",
+              "result": 15
+            },
+            {
+              "name": "fT3",
+              "result": 3.5
+            },
+            {
+              "name": "Testosteron",
+              "result": 54.3
+            },
+            {
+              "name": "PSA",
+              "result": 4.2
+            }
+          ]
+        },
+        {
+          "groupName": "coagulology",
+          "results": [
+            {
+              "name": "PT",
+              "result": 13
+            },
+            {
+              "name": "INR",
+              "result": 0.7
+            },
+            {
+              "name": "APTT",
+              "result": 54
+            },
+            {
+              "name": "D-dimer",
+              "result": 325
+            },
+            {
+              "name": "Fibrinogen",
+              "result": 1.6
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 14,
       "patient_id": 748392763,
       "visit_date": "2015-07-18",
-      "location": " London Rd, Southend-on-Sea"
+      "location": " London Rd, Southend-on-Sea",
+      "results": [
+        {
+          "groupName": "hematology",
+          "results": [
+            {
+              "name": "RBC",
+              "result": 6.2
+            },
+            {
+              "name": "WBC",
+              "result": 3.9
+            },
+            {
+              "name": "Hematocrit",
+              "result": 42
+            },
+            {
+              "name": "Hemoglobin",
+              "result": 12.5
+            },
+            {
+              "name": "Platelets",
+              "result": 130
+            }
+          ]
+        },
+        {
+          "groupName": "biochemistry",
+          "results": [
+            {
+              "name": "Cholesterol Total",
+              "result": 210
+            },
+            {
+              "name": "Iron",
+              "result": 12
+            },
+            {
+              "name": "Bilirubine",
+              "result": 0.8
+            },
+            {
+              "name": "Creatinine",
+              "result": 1.3
+            },
+            {
+              "name": "CRP",
+              "result": 4
+            }
+          ]
+        },
+        {
+          "groupName": "hormonal test",
+          "results": [
+            {
+              "name": "TSH",
+              "result": 2.25
+            },
+            {
+              "name": "fT4",
+              "result": 15
+            },
+            {
+              "name": "fT3",
+              "result": 3.5
+            },
+            {
+              "name": "Testosteron",
+              "result": 54.3
+            },
+            {
+              "name": "PSA",
+              "result": 4.2
+            }
+          ]
+        },
+        {
+          "groupName": "coagulology",
+          "results": [
+            {
+              "name": "PT",
+              "result": 13
+            },
+            {
+              "name": "INR",
+              "result": 0.7
+            },
+            {
+              "name": "APTT",
+              "result": 54
+            },
+            {
+              "name": "D-dimer",
+              "result": 325
+            },
+            {
+              "name": "Fibrinogen",
+              "result": 1.6
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 15,
       "patient_id": 748392763,
       "visit_date": "2015-06-01",
-      "location": "Wimpole St, Marylebone, London"
+      "location": "Wimpole St, Marylebone, London",
+      "results": [
+        {
+          "groupName": "hematology",
+          "results": [
+            {
+              "name": "RBC",
+              "result": 6.2
+            },
+            {
+              "name": "WBC",
+              "result": 3.9
+            },
+            {
+              "name": "Hematocrit",
+              "result": 42
+            },
+            {
+              "name": "Hemoglobin",
+              "result": 12.5
+            },
+            {
+              "name": "Platelets",
+              "result": 130
+            }
+          ]
+        },
+        {
+          "groupName": "biochemistry",
+          "results": [
+            {
+              "name": "Cholesterol Total",
+              "result": 210
+            },
+            {
+              "name": "Iron",
+              "result": 12
+            },
+            {
+              "name": "Bilirubine",
+              "result": 0.8
+            },
+            {
+              "name": "Creatinine",
+              "result": 1.3
+            },
+            {
+              "name": "CRP",
+              "result": 4
+            }
+          ]
+        },
+        {
+          "groupName": "hormonal test",
+          "results": [
+            {
+              "name": "TSH",
+              "result": 2.25
+            },
+            {
+              "name": "fT4",
+              "result": 15
+            },
+            {
+              "name": "fT3",
+              "result": 3.5
+            },
+            {
+              "name": "Testosteron",
+              "result": 54.3
+            },
+            {
+              "name": "PSA",
+              "result": 4.2
+            }
+          ]
+        },
+        {
+          "groupName": "coagulology",
+          "results": [
+            {
+              "name": "PT",
+              "result": 13
+            },
+            {
+              "name": "INR",
+              "result": 0.7
+            },
+            {
+              "name": "APTT",
+              "result": 54
+            },
+            {
+              "name": "D-dimer",
+              "result": 325
+            },
+            {
+              "name": "Fibrinogen",
+              "result": 1.6
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 16,
       "patient_id": 748392763,
       "visit_date": "2015-05-23",
-      "location": "10 St George's Rd, London"
+      "location": "10 St George's Rd, London",
+      "results": [
+        {
+          "groupName": "hematology",
+          "results": [
+            {
+              "name": "RBC",
+              "result": 6.2
+            },
+            {
+              "name": "WBC",
+              "result": 3.9
+            },
+            {
+              "name": "Hematocrit",
+              "result": 42
+            },
+            {
+              "name": "Hemoglobin",
+              "result": 12.5
+            },
+            {
+              "name": "Platelets",
+              "result": 130
+            }
+          ]
+        },
+        {
+          "groupName": "biochemistry",
+          "results": [
+            {
+              "name": "Cholesterol Total",
+              "result": 210
+            },
+            {
+              "name": "Iron",
+              "result": 12
+            },
+            {
+              "name": "Bilirubine",
+              "result": 0.8
+            },
+            {
+              "name": "Creatinine",
+              "result": 1.3
+            },
+            {
+              "name": "CRP",
+              "result": 4
+            }
+          ]
+        },
+        {
+          "groupName": "hormonal test",
+          "results": [
+            {
+              "name": "TSH",
+              "result": 2.25
+            },
+            {
+              "name": "fT4",
+              "result": 15
+            },
+            {
+              "name": "fT3",
+              "result": 3.5
+            },
+            {
+              "name": "Testosteron",
+              "result": 54.3
+            },
+            {
+              "name": "PSA",
+              "result": 4.2
+            }
+          ]
+        },
+        {
+          "groupName": "coagulology",
+          "results": [
+            {
+              "name": "PT",
+              "result": 13
+            },
+            {
+              "name": "INR",
+              "result": 0.7
+            },
+            {
+              "name": "APTT",
+              "result": 54
+            },
+            {
+              "name": "D-dimer",
+              "result": 325
+            },
+            {
+              "name": "Fibrinogen",
+              "result": 1.6
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 17,
       "patient_id": 946386401,
       "visit_date": "2015-03-28",
-      "location": "Wimpole St, Marylebone, London"
+      "location": "Wimpole St, Marylebone, London",
+      "results": [
+        {
+          "groupName": "hematology",
+          "results": [
+            {
+              "name": "RBC",
+              "result": 6.2
+            },
+            {
+              "name": "WBC",
+              "result": 3.9
+            },
+            {
+              "name": "Hematocrit",
+              "result": 42
+            },
+            {
+              "name": "Hemoglobin",
+              "result": 12.5
+            },
+            {
+              "name": "Platelets",
+              "result": 130
+            }
+          ]
+        },
+        {
+          "groupName": "biochemistry",
+          "results": [
+            {
+              "name": "Cholesterol Total",
+              "result": 210
+            },
+            {
+              "name": "Iron",
+              "result": 12
+            },
+            {
+              "name": "Bilirubine",
+              "result": 0.8
+            },
+            {
+              "name": "Creatinine",
+              "result": 1.3
+            },
+            {
+              "name": "CRP",
+              "result": 4
+            }
+          ]
+        },
+        {
+          "groupName": "hormonal test",
+          "results": [
+            {
+              "name": "TSH",
+              "result": 2.25
+            },
+            {
+              "name": "fT4",
+              "result": 15
+            },
+            {
+              "name": "fT3",
+              "result": 3.5
+            },
+            {
+              "name": "Testosteron",
+              "result": 54.3
+            },
+            {
+              "name": "PSA",
+              "result": 4.2
+            }
+          ]
+        },
+        {
+          "groupName": "coagulology",
+          "results": [
+            {
+              "name": "PT",
+              "result": 13
+            },
+            {
+              "name": "INR",
+              "result": 0.7
+            },
+            {
+              "name": "APTT",
+              "result": 54
+            },
+            {
+              "name": "D-dimer",
+              "result": 325
+            },
+            {
+              "name": "Fibrinogen",
+              "result": 1.6
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 18,
       "patient_id": 946386401,
       "visit_date": "2015-01-07",
-      "location": "33-34 Bury St, London"
+      "location": "33-34 Bury St, London",
+      "results": [
+        {
+          "groupName": "hematology",
+          "results": [
+            {
+              "name": "RBC",
+              "result": 6.2
+            },
+            {
+              "name": "WBC",
+              "result": 3.9
+            },
+            {
+              "name": "Hematocrit",
+              "result": 42
+            },
+            {
+              "name": "Hemoglobin",
+              "result": 12.5
+            },
+            {
+              "name": "Platelets",
+              "result": 130
+            }
+          ]
+        },
+        {
+          "groupName": "biochemistry",
+          "results": [
+            {
+              "name": "Cholesterol Total",
+              "result": 210
+            },
+            {
+              "name": "Iron",
+              "result": 12
+            },
+            {
+              "name": "Bilirubine",
+              "result": 0.8
+            },
+            {
+              "name": "Creatinine",
+              "result": 1.3
+            },
+            {
+              "name": "CRP",
+              "result": 4
+            }
+          ]
+        },
+        {
+          "groupName": "hormonal test",
+          "results": [
+            {
+              "name": "TSH",
+              "result": 2.25
+            },
+            {
+              "name": "fT4",
+              "result": 15
+            },
+            {
+              "name": "fT3",
+              "result": 3.5
+            },
+            {
+              "name": "Testosteron",
+              "result": 54.3
+            },
+            {
+              "name": "PSA",
+              "result": 4.2
+            }
+          ]
+        },
+        {
+          "groupName": "coagulology",
+          "results": [
+            {
+              "name": "PT",
+              "result": 13
+            },
+            {
+              "name": "INR",
+              "result": 0.7
+            },
+            {
+              "name": "APTT",
+              "result": 54
+            },
+            {
+              "name": "D-dimer",
+              "result": 325
+            },
+            {
+              "name": "Fibrinogen",
+              "result": 1.6
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 19,
       "patient_id": 946386401,
       "visit_date": "2016-11-11",
-      "location": " London Rd, Southend-on-Sea"
+      "location": " London Rd, Southend-on-Sea",
+      "results": [
+        {
+          "groupName": "hematology",
+          "results": [
+            {
+              "name": "RBC",
+              "result": 6.2
+            },
+            {
+              "name": "WBC",
+              "result": 3.9
+            },
+            {
+              "name": "Hematocrit",
+              "result": 42
+            },
+            {
+              "name": "Hemoglobin",
+              "result": 12.5
+            },
+            {
+              "name": "Platelets",
+              "result": 130
+            }
+          ]
+        },
+        {
+          "groupName": "biochemistry",
+          "results": [
+            {
+              "name": "Cholesterol Total",
+              "result": 210
+            },
+            {
+              "name": "Iron",
+              "result": 12
+            },
+            {
+              "name": "Bilirubine",
+              "result": 0.8
+            },
+            {
+              "name": "Creatinine",
+              "result": 1.3
+            },
+            {
+              "name": "CRP",
+              "result": 4
+            }
+          ]
+        },
+        {
+          "groupName": "hormonal test",
+          "results": [
+            {
+              "name": "TSH",
+              "result": 2.25
+            },
+            {
+              "name": "fT4",
+              "result": 15
+            },
+            {
+              "name": "fT3",
+              "result": 3.5
+            },
+            {
+              "name": "Testosteron",
+              "result": 54.3
+            },
+            {
+              "name": "PSA",
+              "result": 4.2
+            }
+          ]
+        },
+        {
+          "groupName": "coagulology",
+          "results": [
+            {
+              "name": "PT",
+              "result": 13
+            },
+            {
+              "name": "INR",
+              "result": 0.7
+            },
+            {
+              "name": "APTT",
+              "result": 54
+            },
+            {
+              "name": "D-dimer",
+              "result": 325
+            },
+            {
+              "name": "Fibrinogen",
+              "result": 1.6
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 20,
       "patient_id": 946386401,
       "visit_date": "2016-09-22",
-      "location": "33-34 Bury St, London"
+      "location": "33-34 Bury St, London",
+      "results": [
+        {
+          "groupName": "hematology",
+          "results": [
+            {
+              "name": "RBC",
+              "result": 6.2
+            },
+            {
+              "name": "WBC",
+              "result": 3.9
+            },
+            {
+              "name": "Hematocrit",
+              "result": 42
+            },
+            {
+              "name": "Hemoglobin",
+              "result": 12.5
+            },
+            {
+              "name": "Platelets",
+              "result": 130
+            }
+          ]
+        },
+        {
+          "groupName": "biochemistry",
+          "results": [
+            {
+              "name": "Cholesterol Total",
+              "result": 210
+            },
+            {
+              "name": "Iron",
+              "result": 12
+            },
+            {
+              "name": "Bilirubine",
+              "result": 0.8
+            },
+            {
+              "name": "Creatinine",
+              "result": 1.3
+            },
+            {
+              "name": "CRP",
+              "result": 4
+            }
+          ]
+        },
+        {
+          "groupName": "hormonal test",
+          "results": [
+            {
+              "name": "TSH",
+              "result": 2.25
+            },
+            {
+              "name": "fT4",
+              "result": 15
+            },
+            {
+              "name": "fT3",
+              "result": 3.5
+            },
+            {
+              "name": "Testosteron",
+              "result": 54.3
+            },
+            {
+              "name": "PSA",
+              "result": 4.2
+            }
+          ]
+        },
+        {
+          "groupName": "coagulology",
+          "results": [
+            {
+              "name": "PT",
+              "result": 13
+            },
+            {
+              "name": "INR",
+              "result": 0.7
+            },
+            {
+              "name": "APTT",
+              "result": 54
+            },
+            {
+              "name": "D-dimer",
+              "result": 325
+            },
+            {
+              "name": "Fibrinogen",
+              "result": 1.6
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 21,
       "patient_id": 748392763,
       "visit_date": "2016-08-30",
-      "location": " London Rd, Southend-on-Sea"
+      "location": " London Rd, Southend-on-Sea",
+      "results": [
+        {
+          "groupName": "hematology",
+          "results": [
+            {
+              "name": "RBC",
+              "result": 6.2
+            },
+            {
+              "name": "WBC",
+              "result": 3.9
+            },
+            {
+              "name": "Hematocrit",
+              "result": 42
+            },
+            {
+              "name": "Hemoglobin",
+              "result": 12.5
+            },
+            {
+              "name": "Platelets",
+              "result": 130
+            }
+          ]
+        },
+        {
+          "groupName": "biochemistry",
+          "results": [
+            {
+              "name": "Cholesterol Total",
+              "result": 210
+            },
+            {
+              "name": "Iron",
+              "result": 12
+            },
+            {
+              "name": "Bilirubine",
+              "result": 0.8
+            },
+            {
+              "name": "Creatinine",
+              "result": 1.3
+            },
+            {
+              "name": "CRP",
+              "result": 4
+            }
+          ]
+        },
+        {
+          "groupName": "hormonal test",
+          "results": [
+            {
+              "name": "TSH",
+              "result": 2.25
+            },
+            {
+              "name": "fT4",
+              "result": 15
+            },
+            {
+              "name": "fT3",
+              "result": 3.5
+            },
+            {
+              "name": "Testosteron",
+              "result": 54.3
+            },
+            {
+              "name": "PSA",
+              "result": 4.2
+            }
+          ]
+        },
+        {
+          "groupName": "coagulology",
+          "results": [
+            {
+              "name": "PT",
+              "result": 13
+            },
+            {
+              "name": "INR",
+              "result": 0.7
+            },
+            {
+              "name": "APTT",
+              "result": 54
+            },
+            {
+              "name": "D-dimer",
+              "result": 325
+            },
+            {
+              "name": "Fibrinogen",
+              "result": 1.6
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 22,
       "patient_id": 946386401,
       "visit_date": "2016-06-25",
-      "location": "10 St George's Rd, London"
+      "location": "10 St George's Rd, London",
+      "results": [
+        {
+          "groupName": "hematology",
+          "results": [
+            {
+              "name": "RBC",
+              "result": 6.2
+            },
+            {
+              "name": "WBC",
+              "result": 3.9
+            },
+            {
+              "name": "Hematocrit",
+              "result": 42
+            },
+            {
+              "name": "Hemoglobin",
+              "result": 12.5
+            },
+            {
+              "name": "Platelets",
+              "result": 130
+            }
+          ]
+        },
+        {
+          "groupName": "biochemistry",
+          "results": [
+            {
+              "name": "Cholesterol Total",
+              "result": 210
+            },
+            {
+              "name": "Iron",
+              "result": 12
+            },
+            {
+              "name": "Bilirubine",
+              "result": 0.8
+            },
+            {
+              "name": "Creatinine",
+              "result": 1.3
+            },
+            {
+              "name": "CRP",
+              "result": 4
+            }
+          ]
+        },
+        {
+          "groupName": "hormonal test",
+          "results": [
+            {
+              "name": "TSH",
+              "result": 2.25
+            },
+            {
+              "name": "fT4",
+              "result": 15
+            },
+            {
+              "name": "fT3",
+              "result": 3.5
+            },
+            {
+              "name": "Testosteron",
+              "result": 54.3
+            },
+            {
+              "name": "PSA",
+              "result": 4.2
+            }
+          ]
+        },
+        {
+          "groupName": "coagulology",
+          "results": [
+            {
+              "name": "PT",
+              "result": 13
+            },
+            {
+              "name": "INR",
+              "result": 0.7
+            },
+            {
+              "name": "APTT",
+              "result": 54
+            },
+            {
+              "name": "D-dimer",
+              "result": 325
+            },
+            {
+              "name": "Fibrinogen",
+              "result": 1.6
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 23,
       "patient_id": 946386401,
       "visit_date": "2016-05-15",
-      "location": " London Rd, Southend-on-Sea"
+      "location": " London Rd, Southend-on-Sea",
+      "results": [
+        {
+          "groupName": "hematology",
+          "results": [
+            {
+              "name": "RBC",
+              "result": 6.2
+            },
+            {
+              "name": "WBC",
+              "result": 3.9
+            },
+            {
+              "name": "Hematocrit",
+              "result": 42
+            },
+            {
+              "name": "Hemoglobin",
+              "result": 12.5
+            },
+            {
+              "name": "Platelets",
+              "result": 130
+            }
+          ]
+        },
+        {
+          "groupName": "biochemistry",
+          "results": [
+            {
+              "name": "Cholesterol Total",
+              "result": 210
+            },
+            {
+              "name": "Iron",
+              "result": 12
+            },
+            {
+              "name": "Bilirubine",
+              "result": 0.8
+            },
+            {
+              "name": "Creatinine",
+              "result": 1.3
+            },
+            {
+              "name": "CRP",
+              "result": 4
+            }
+          ]
+        },
+        {
+          "groupName": "hormonal test",
+          "results": [
+            {
+              "name": "TSH",
+              "result": 2.25
+            },
+            {
+              "name": "fT4",
+              "result": 15
+            },
+            {
+              "name": "fT3",
+              "result": 3.5
+            },
+            {
+              "name": "Testosteron",
+              "result": 54.3
+            },
+            {
+              "name": "PSA",
+              "result": 4.2
+            }
+          ]
+        },
+        {
+          "groupName": "coagulology",
+          "results": [
+            {
+              "name": "PT",
+              "result": 13
+            },
+            {
+              "name": "INR",
+              "result": 0.7
+            },
+            {
+              "name": "APTT",
+              "result": 54
+            },
+            {
+              "name": "D-dimer",
+              "result": 325
+            },
+            {
+              "name": "Fibrinogen",
+              "result": 1.6
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 24,
       "patient_id": 946386401,
       "visit_date": "2016-04-09",
-      "location": "10 St George's Rd, London"
+      "location": "10 St George's Rd, London",
+      "results": [
+        {
+          "groupName": "hematology",
+          "results": [
+            {
+              "name": "RBC",
+              "result": 6.2
+            },
+            {
+              "name": "WBC",
+              "result": 3.9
+            },
+            {
+              "name": "Hematocrit",
+              "result": 42
+            },
+            {
+              "name": "Hemoglobin",
+              "result": 12.5
+            },
+            {
+              "name": "Platelets",
+              "result": 130
+            }
+          ]
+        },
+        {
+          "groupName": "biochemistry",
+          "results": [
+            {
+              "name": "Cholesterol Total",
+              "result": 210
+            },
+            {
+              "name": "Iron",
+              "result": 12
+            },
+            {
+              "name": "Bilirubine",
+              "result": 0.8
+            },
+            {
+              "name": "Creatinine",
+              "result": 1.3
+            },
+            {
+              "name": "CRP",
+              "result": 4
+            }
+          ]
+        },
+        {
+          "groupName": "hormonal test",
+          "results": [
+            {
+              "name": "TSH",
+              "result": 2.25
+            },
+            {
+              "name": "fT4",
+              "result": 15
+            },
+            {
+              "name": "fT3",
+              "result": 3.5
+            },
+            {
+              "name": "Testosteron",
+              "result": 54.3
+            },
+            {
+              "name": "PSA",
+              "result": 4.2
+            }
+          ]
+        },
+        {
+          "groupName": "coagulology",
+          "results": [
+            {
+              "name": "PT",
+              "result": 13
+            },
+            {
+              "name": "INR",
+              "result": 0.7
+            },
+            {
+              "name": "APTT",
+              "result": 54
+            },
+            {
+              "name": "D-dimer",
+              "result": 325
+            },
+            {
+              "name": "Fibrinogen",
+              "result": 1.6
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 25,
       "patient_id": 946386401,
       "visit_date": "2016-03-31",
-      "location": "Wimpole St, Marylebone, London"
+      "location": "Wimpole St, Marylebone, London",
+      "results": [
+        {
+          "groupName": "hematology",
+          "results": [
+            {
+              "name": "RBC",
+              "result": 6.2
+            },
+            {
+              "name": "WBC",
+              "result": 3.9
+            },
+            {
+              "name": "Hematocrit",
+              "result": 42
+            },
+            {
+              "name": "Hemoglobin",
+              "result": 12.5
+            },
+            {
+              "name": "Platelets",
+              "result": 130
+            }
+          ]
+        },
+        {
+          "groupName": "biochemistry",
+          "results": [
+            {
+              "name": "Cholesterol Total",
+              "result": 210
+            },
+            {
+              "name": "Iron",
+              "result": 12
+            },
+            {
+              "name": "Bilirubine",
+              "result": 0.8
+            },
+            {
+              "name": "Creatinine",
+              "result": 1.3
+            },
+            {
+              "name": "CRP",
+              "result": 4
+            }
+          ]
+        },
+        {
+          "groupName": "hormonal test",
+          "results": [
+            {
+              "name": "TSH",
+              "result": 2.25
+            },
+            {
+              "name": "fT4",
+              "result": 15
+            },
+            {
+              "name": "fT3",
+              "result": 3.5
+            },
+            {
+              "name": "Testosteron",
+              "result": 54.3
+            },
+            {
+              "name": "PSA",
+              "result": 4.2
+            }
+          ]
+        },
+        {
+          "groupName": "coagulology",
+          "results": [
+            {
+              "name": "PT",
+              "result": 13
+            },
+            {
+              "name": "INR",
+              "result": 0.7
+            },
+            {
+              "name": "APTT",
+              "result": 54
+            },
+            {
+              "name": "D-dimer",
+              "result": 325
+            },
+            {
+              "name": "Fibrinogen",
+              "result": 1.6
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 26,
       "patient_id": 754932309,
       "visit_date": "2016-05-15",
-      "location": "33-34 Bury St, London"
+      "location": "33-34 Bury St, London",
+      "results": [
+        {
+          "groupName": "hematology",
+          "results": [
+            {
+              "name": "RBC",
+              "result": 6.2
+            },
+            {
+              "name": "WBC",
+              "result": 3.9
+            },
+            {
+              "name": "Hematocrit",
+              "result": 42
+            },
+            {
+              "name": "Hemoglobin",
+              "result": 12.5
+            },
+            {
+              "name": "Platelets",
+              "result": 130
+            }
+          ]
+        },
+        {
+          "groupName": "biochemistry",
+          "results": [
+            {
+              "name": "Cholesterol Total",
+              "result": 210
+            },
+            {
+              "name": "Iron",
+              "result": 12
+            },
+            {
+              "name": "Bilirubine",
+              "result": 0.8
+            },
+            {
+              "name": "Creatinine",
+              "result": 1.3
+            },
+            {
+              "name": "CRP",
+              "result": 4
+            }
+          ]
+        },
+        {
+          "groupName": "hormonal test",
+          "results": [
+            {
+              "name": "TSH",
+              "result": 2.25
+            },
+            {
+              "name": "fT4",
+              "result": 15
+            },
+            {
+              "name": "fT3",
+              "result": 3.5
+            },
+            {
+              "name": "Testosteron",
+              "result": 54.3
+            },
+            {
+              "name": "PSA",
+              "result": 4.2
+            }
+          ]
+        },
+        {
+          "groupName": "coagulology",
+          "results": [
+            {
+              "name": "PT",
+              "result": 13
+            },
+            {
+              "name": "INR",
+              "result": 0.7
+            },
+            {
+              "name": "APTT",
+              "result": 54
+            },
+            {
+              "name": "D-dimer",
+              "result": 325
+            },
+            {
+              "name": "Fibrinogen",
+              "result": 1.6
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 27,
       "patient_id": 754932309,
       "visit_date": "2016-04-09",
-      "location": " London Rd, Southend-on-Sea"
+      "location": " London Rd, Southend-on-Sea",
+      "results": [
+        {
+          "groupName": "hematology",
+          "results": [
+            {
+              "name": "RBC",
+              "result": 6.2
+            },
+            {
+              "name": "WBC",
+              "result": 3.9
+            },
+            {
+              "name": "Hematocrit",
+              "result": 42
+            },
+            {
+              "name": "Hemoglobin",
+              "result": 12.5
+            },
+            {
+              "name": "Platelets",
+              "result": 130
+            }
+          ]
+        },
+        {
+          "groupName": "biochemistry",
+          "results": [
+            {
+              "name": "Cholesterol Total",
+              "result": 210
+            },
+            {
+              "name": "Iron",
+              "result": 12
+            },
+            {
+              "name": "Bilirubine",
+              "result": 0.8
+            },
+            {
+              "name": "Creatinine",
+              "result": 1.3
+            },
+            {
+              "name": "CRP",
+              "result": 4
+            }
+          ]
+        },
+        {
+          "groupName": "hormonal test",
+          "results": [
+            {
+              "name": "TSH",
+              "result": 2.25
+            },
+            {
+              "name": "fT4",
+              "result": 15
+            },
+            {
+              "name": "fT3",
+              "result": 3.5
+            },
+            {
+              "name": "Testosteron",
+              "result": 54.3
+            },
+            {
+              "name": "PSA",
+              "result": 4.2
+            }
+          ]
+        },
+        {
+          "groupName": "coagulology",
+          "results": [
+            {
+              "name": "PT",
+              "result": 13
+            },
+            {
+              "name": "INR",
+              "result": 0.7
+            },
+            {
+              "name": "APTT",
+              "result": 54
+            },
+            {
+              "name": "D-dimer",
+              "result": 325
+            },
+            {
+              "name": "Fibrinogen",
+              "result": 1.6
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 28,
       "patient_id": 754932309,
       "visit_date": "2016-03-31",
-      "location": "Wimpole St, Marylebone, London"
+      "location": "Wimpole St, Marylebone, London",
+      "results": [
+        {
+          "groupName": "hematology",
+          "results": [
+            {
+              "name": "RBC",
+              "result": 6.2
+            },
+            {
+              "name": "WBC",
+              "result": 3.9
+            },
+            {
+              "name": "Hematocrit",
+              "result": 42
+            },
+            {
+              "name": "Hemoglobin",
+              "result": 12.5
+            },
+            {
+              "name": "Platelets",
+              "result": 130
+            }
+          ]
+        },
+        {
+          "groupName": "biochemistry",
+          "results": [
+            {
+              "name": "Cholesterol Total",
+              "result": 210
+            },
+            {
+              "name": "Iron",
+              "result": 12
+            },
+            {
+              "name": "Bilirubine",
+              "result": 0.8
+            },
+            {
+              "name": "Creatinine",
+              "result": 1.3
+            },
+            {
+              "name": "CRP",
+              "result": 4
+            }
+          ]
+        },
+        {
+          "groupName": "hormonal test",
+          "results": [
+            {
+              "name": "TSH",
+              "result": 2.25
+            },
+            {
+              "name": "fT4",
+              "result": 15
+            },
+            {
+              "name": "fT3",
+              "result": 3.5
+            },
+            {
+              "name": "Testosteron",
+              "result": 54.3
+            },
+            {
+              "name": "PSA",
+              "result": 4.2
+            }
+          ]
+        },
+        {
+          "groupName": "coagulology",
+          "results": [
+            {
+              "name": "PT",
+              "result": 13
+            },
+            {
+              "name": "INR",
+              "result": 0.7
+            },
+            {
+              "name": "APTT",
+              "result": 54
+            },
+            {
+              "name": "D-dimer",
+              "result": 325
+            },
+            {
+              "name": "Fibrinogen",
+              "result": 1.6
+            }
+          ]
+        }
+      ]
     }
   ]
 }

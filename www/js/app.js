@@ -36,7 +36,8 @@ angular.module('starter', ['ionic', 'ion-sticky'])
                 url: '/info',
                 views: {
                     'info-tab': {
-                        templateUrl: 'templates/info.html'
+                        templateUrl: 'templates/info.html',
+                        controller: 'InfoController'
                     }
                 }
             })
@@ -190,4 +191,35 @@ angular.module('starter', ['ionic', 'ion-sticky'])
             // $http.get('js/reference.json').success(function (data) {
             //     console.log(data);
             // });
-        }]);
+        }])
+    .controller('InfoController', function ($scope, $state) {
+
+        var whatToDo = this;
+
+        /**
+         * Sends an email using Email composer with attachments plugin and using
+         * parameter email.
+         *
+         * @param email
+         */
+        $scope.sendEmail = function (email) {
+            console.log("test" + window.plugins);
+            if (window.plugins && window.plugins.emailComposer) { //check if plugin exists
+                console.log("Start");
+
+                window.plugins.emailComposer.showEmailComposerWithCallback(function (result) {
+                        console.log("Email sent successfully");
+                    },
+
+                    null,        // Subject
+                    null,        // Body
+                    [email],     // To (Email to send)
+                    null,        // CC
+                    null,        // BCC
+                    false,       // isHTML
+                    null,        // Attachments
+                    null);       // Attachment Data
+            }
+
+        }
+    });

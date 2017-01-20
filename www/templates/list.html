@@ -23,9 +23,8 @@
                 <img ng-src="img/{{item.sex}}.png" alt="{{ item.name }} Photo">
                 <i class="icon ion-chevron-right icon-accessory"></i>
                 <h3>{{item.name}}</h3>
-                <h2>{{item.address}}</h2>
-                <h2>Last visit: {{item.last_visit}}</h2>
-                <h2>Age: {{item.age}}</h2>
+                <h4>Age: {{item.age}}</h4>
+                <h4>Last visit: {{item.last_visit}}</h4>
 
                 <button class="button button-clear icon ion-star button-assertive" ng-click="toggleStar(item)" ng-show="item.star"></button>
                 <ion-option-button class="button-dark" ng-click="toggleStar(item)">

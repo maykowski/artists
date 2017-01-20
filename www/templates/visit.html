@@ -8,28 +8,28 @@
         <div class="right list-header">
             <h4 class="text-center padding-vertical">Facility: {{ whichvisit.location }}</h4>
         </div>
-
+        <div class="item-divider"></div>
 
         <ion-list>
             <ul>
                 <li ng-repeat="group in whichvisit.results">
                     <ion-item class="item-divider">
                         <div class="row">
-                            <div class="text-left col col-50">{{group.groupName}}</div>
-                            <div class="text-center col">result</div>
-                            <div class="text-right col">ref. range</div>
+                            <div class="text-left col col-40">{{group.groupName}}</div>
+                            <div class="text-left col col-25">result</div>
+                            <div class="text-right col col-25">ref. range</div>
                         </div>
 
                     </ion-item>
                     <ion-item ng-repeat="result in group.results">
                         <div class="row">
-                            <div class="text-left col-50">{{result.name}}</div>
+                            <div class="text-left col col-40">{{result.name}}</div>
                             <div class="col col-10">
                                 <i class="icon ion-arrow-up-a assertive" ng-show="result.result>result.max"></i>
                                 <i class="icon ion-arrow-down-a assertive" ng-show="result.result<result.min"></i>
                             </div>
-                            <div class="text-left col col-20">{{result.result}}</div>
-                            <div class="text-right col col-20">{{result.min}}-{{result.max}}</div>
+                            <div class="text-left col col-25">{{result.result}}</div>
+                            <div class="text-right col col-25">{{result.min}}-{{result.max}}</div>
                         </div>
                     </ion-item>
                 </li>

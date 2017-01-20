@@ -18,29 +18,38 @@ body {
 
 .branding {
   width: 90%;
-  /*max-width: 300px;*/
+  max-width: 300px;
   margin: 0 auto;
   margin-top: 20px;
   text-align: center;
 }
 
+.branding-row{
+  padding:0;
+}
+
 .email-btn{
-  margin-top:50px;
+  margin-top:20px;
+  text-decoration: underline;
 }
 
 .logo{
-  height:50%;width:50%;
-  margin-top:50px;
+  height:auto;width:130%;
+  padding:0;
 }
 
 .tagline {
   font-size: 1.4rem;
 }
 
+.tagline2 {
+  font-size: 0.8rem;
+}
+
 .branding p {
-  margin-top: 40px;
-  line-height: 2.4rem;
-  font-size: 1.3rem;
+  margin-top: 30px;
+  line-height: 2.0rem;
+  font-size: 1.0rem;
 }
 
 .positive-bg{

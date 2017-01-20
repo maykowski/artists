@@ -1,11 +1,17 @@
 <ion-view hide-nav-bar="true">
   <ion-content class="padding positive-bg">
     <div class="branding">
-      <div class="tagline light">Blood Test App</div>
+      <div class="row branding-row">
+        <div class="col col-70"><div class="tagline light text-center">Lab Test App</div>
+          <div class="tagline2 light">by Protos Lab</div></div>
+        <div class="col col-20"><img class="logo left" src="img/logo.png"></div>
+
+      </div>
+
+
       <p class="light text-left branding-content">This app was created on marketing purpose to show the abilities of our company. </p>
       <p class="light text-left branding-content">If your are looking for a software vendor just drop me an email. </p>
-      <button class="button button-outline button-light email-btn" href="mailto:wojciech.maykowski@protoslab.com">wojciech.maykowski@protoslab.com</button>
-      <img class="logo" src="../img/logo.png">
+      <button class="button button-clear button-light email-btn" ng-click="sendEmail('wojciech.maykowski@protoslab.com')">wojciech.maykowski@protoslab.com</button>
     </div>
   </ion-content>
 </ion-view>
