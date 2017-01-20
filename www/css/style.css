@@ -80,6 +80,10 @@ body {
   background-image: linear-gradient(0deg, #b92b27, #b92b27 0%, transparent 0%)
 }
 
+.tab-item.tab-item-active, .tab-item.active, .tab-item.activated {
+  color: #b92b27;
+}
+
 .item-thumbnail-left img {
   border-radius: 10px;
 }
