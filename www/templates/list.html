@@ -19,7 +19,7 @@
         <ion-refresher on-refresh="doRefresh()"></ion-refresher>
         <ion-list show-delete="data.showDelete" show-reorder="data.showReorder">
             <ion-item ng-class="{'star': item.star}" ng-repeat="item in patients | filter: query" class="item-thumbnail-left item-icon-right
-      item-text-wrap" href="#/tab/list/{{item.id}}">
+      item-text-wrap" ui-sref="tabs.detail({aId:item.id})">
                 <img ng-src="img/{{item.sex}}.png" alt="{{ item.name }} Photo">
                 <i class="icon ion-chevron-right icon-accessory"></i>
                 <h3>{{item.name}}</h3>

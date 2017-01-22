@@ -3,7 +3,10 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('starter', ['ionic', 'ion-sticky'])
+angular.module('starter', ['ionic', 'ion-sticky', 'patient-state'])
+
+    .factory('PatientService', PatientService)
+    .factory('VisitService', VisitService)
 
     .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {
@@ -24,174 +27,69 @@ angular.module('starter', ['ionic', 'ion-sticky'])
     })
 
 
-    .config(function ($stateProvider, $urlRouterProvider) {
-        $stateProvider
-            .state('tabs', {
-                url: '/tab',
-                abstract: true,
-                templateUrl: 'templates/tabs.html'
-            })
+    .controller('ListController', ['$scope', '$http', '$state', 'patients', 'PatientService',
+        function ($scope, $http, $state, patients, PatientService) {
+            $scope.patients = patients.data.patients;
 
-            .state('tabs.info', {
-                url: '/info',
-                views: {
-                    'info-tab': {
-                        templateUrl: 'templates/info.html',
-                        controller: 'InfoController'
-                    }
-                }
-            })
+            $scope.whichpatient = $state.params.aId;
+            $scope.data = {showDelete: false, showReorder: false};
 
-            .state('tabs.list', {
-                url: '/list',
-                views: {
-                    'list-tab': {
-                        templateUrl: 'templates/list.html',
-                        controller: 'ListController'
-                    }
-                }
-            })
-
-            .state('tabs.detail', {
-                url: '/list/:aId',
-                views: {
-                    'list-tab': {
-                        templateUrl: 'templates/detail.html',
-                        controller: 'PatientController'
-                    }
-                }
-            })
-            .state('tabs.visit', {
-                url: '/visit/:visitId',
-                views: {
-                    'list-tab': {
-                        templateUrl: 'templates/visit.html',
-                        controller: 'VisitController'
-                    }
-                }
-            })
-
-            // .state('tabs.calendar', {
-            //     url: '/calendar',
-            //     views: {
-            //         'calendar-tab': {
-            //             templateUrl: 'templates/calendar.html',
-            //             controller: 'CalendarController'
-            //         }
-            //     }
-            // })
+            $scope.onItemDelete = function (item) {
+                $scope.patients.splice($scope.patients.indexOf(item), 1);
+            }
 
 
-        $urlRouterProvider.otherwise('/tab/list');
-    })
+            $scope.doRefresh = function () {
+                PatientService.getPatients().then(function (response) {
+                    $scope.patients = response.patients;
+                    $scope.$broadcast('scroll.refreshComplete');
+                }.bind(this));
+            }
 
-    .controller('CalendarController', ['$scope', '$http', '$state',
-        function ($scope, $http, $state) {
-            $http.get('js/data.json').success(function (data) {
-                $scope.calendar = data.calendar;
+            $scope.toggleStar = function (item) {
+                item.star = !item.star;
+            }
 
-                $scope.onItemDelete = function (dayIndex, item) {
-                    $scope.calendar[dayIndex].schedule.splice($scope.calendar[dayIndex].schedule.indexOf(item), 1);
-                }
-
-                $scope.doRefresh = function () {
-                    $http.get('js/data.json').success(function (data) {
-                        $scope.calendar = data.calendar;
-                        $scope.$broadcast('scroll.refreshComplete');
-                    });
-                }
-
-                $scope.toggleStar = function (item) {
-                    item.star = !item.star;
-                }
-
+            $scope.moveItem = function (item, fromIndex, toIndex) {
+                $scope.patients.splice(fromIndex, 1);
+                $scope.patients.splice(toIndex, 0, item);
+            };
+        }])
+    .controller('PatientController', ['$scope', '$http', '$state', '$filter', 'PatientService', 'VisitService',
+        function ($scope, $http, $state, $filter, PatientService, VisitService) {
+            $scope.whichpatient = PatientService.getPatientDetails($state.params.aId).then(function (response) {
+                $scope.whichpatient = response;
             });
+
+            VisitService.getVisits().then(function (response) {
+                $scope.visits = $filter('filter')(response.data.visits, {patient_id: $state.params.aId});
+            }), function (error) {
+                alert("Error retrieving json data")
+            };
         }])
 
-    .controller('ListController', ['$scope', '$http', '$state',
-        function ($scope, $http, $state) {
-            $http.get('js/data.json').success(function (data) {
-                $scope.patients = data.patients;
-                $scope.whichpatient = $state.params.aId;
-                $scope.data = {showDelete: false, showReorder: false};
+    .controller('VisitController', ['$scope', '$http', '$state', '$filter', 'VisitService',
+        function ($scope, $http, $state, $filter, VisitService) {
+            VisitService.getVisits().then(function (visitResponse) {
+                $scope.whichvisit = $filter('filter')(visitResponse.data.visits, {id: $state.params.visitId})[0];
+            }).then(function (response) {
+                return VisitService.getReference();
+            }).then(function (refResponse) {
+                var reference = refResponse.data.reference;
+                angular.forEach($scope.whichvisit.results, function (value, key) {
+                    angular.forEach(value.results, function (value2, key2) {
+                        var ref = $filter('filter')(reference, value2.name);
+                        value2.min = ref[0].min;
+                        value2.max = ref[0].max;
 
-                $scope.onItemDelete = function (item) {
-                    $scope.patients.splice($scope.patients.indexOf(item), 1);
-                }
-
-                $scope.doRefresh = function () {
-                    $http.get('js/data.json').success(function (data) {
-                        $scope.patients = data.patients;
-                        $scope.$broadcast('scroll.refreshComplete');
-                    });
-                }
-
-                $scope.toggleStar = function (item) {
-                    item.star = !item.star;
-                }
-
-                $scope.moveItem = function (item, fromIndex, toIndex) {
-                    $scope.patients.splice(fromIndex, 1);
-                    $scope.patients.splice(toIndex, 0, item);
-                };
-            });
-        }])
-    .controller('PatientController', ['$scope', '$http', '$state', '$filter',
-        function ($scope, $http, $state, $filter) {
-            $http.get('js/data.json').success(function (data) {
-                $scope.whichpatient = $filter('filter')(data.patients, {id: $state.params.aId})[0];
-            });
-            $http.get('js/visits.json').success(function (data) {
-                $scope.visits = $filter('filter')(data.visits, {patient_id: $state.params.aId});
-
-                $scope.doRefresh = function () {
-                    $http.get('js/visit.json').success(function (data) {
-                        $scope.visits = data.visits;
-                        $scope.$broadcast('scroll.refreshComplete');
-                    });
-                }
-            });
-        }])
-    .controller('VisitController', ['$scope', '$http', '$state', '$filter',
-        function ($scope, $http, $state, $filter) {
-
-            $http.get('js/visits.json').success(function (data) {
-                $scope.whichvisit = $filter('filter')(data.visits, {id: $state.params.visitId})[0];
-                // $scope.hematology = $scope.whichvisit.results[0].hematology;
-
-                $http.get('js/reference.json').success(function (data) {
-                    // var reference = data.reference[0];
-                    //console.log(data.reference);
-                    // console.log($filter('filter')(data.reference[0], "{name:'RBC'}"));
-                    angular.forEach($scope.whichvisit.results, function (value, key) {
-                        angular.forEach(value.results, function (value2, key2) {
-                            // console.log(key2 + ': ' + value2.name);
-                            // console.log($filter('filter')(data.reference, value2.name));
-                            var ref = $filter('filter')(data.reference, value2.name);
-                            value2.min = ref[0].min;
-                            value2.max = ref[0].max;
-                            // console.log($scope.whichvisit)
-
-                        });
                     });
                 });
-
-
-            });
-            // $http.get('js/results.json').success(function (data) {
-            //     $scope.results = $filter('filter')(data.results, {visit_id: $state.params.visitId})[0];
-            //     // console.log($scope.results.hematology)
-            //     $scope.doRefresh = function () {
-            //         $http.get('js/visits.json').success(function (data) {
-            //             $scope.results = data.results;
-            //             $scope.$broadcast('scroll.refreshComplete');
-            //         });
-            //     }
-            // });
-            // $http.get('js/reference.json').success(function (data) {
-            //     console.log(data);
-            // });
+            }), function (error) {
+                alert("Error retrieving json data in VisitController")
+            };
         }])
+
+
     .controller('InfoController', function ($scope, $state) {
 
         var whatToDo = this;
@@ -203,9 +101,7 @@ angular.module('starter', ['ionic', 'ion-sticky'])
          * @param email
          */
         $scope.sendEmail = function (email) {
-            console.log("test" + window.plugins);
             if (window.plugins && window.plugins.emailComposer) { //check if plugin exists
-                console.log("Start");
 
                 window.plugins.emailComposer.showEmailComposerWithCallback(function (result) {
                         console.log("Email sent successfully");
@@ -223,3 +119,42 @@ angular.module('starter', ['ionic', 'ion-sticky'])
 
         }
     });
+
+function PatientService($http, $filter) {
+    function getPatients() {
+        return $http.get('js/data.json').then(function (response) {
+            return response;
+        });
+    }
+
+    function getPatientDetails(id) {
+        return getPatients().then(function (response) {
+            patient = $filter('filter')(response.data.patients, {id: id})[0];
+            return patient;
+        });
+    }
+
+    return {
+        getPatients: getPatients,
+        getPatientDetails: getPatientDetails
+    };
+}
+
+function VisitService($http) {
+    function getVisits() {
+        return $http.get('js/visits.json').then(function (response) {
+            return response;
+        });
+    }
+
+    function getReference() {
+        return $http.get('js/reference.json').then(function (response) {
+            return response;
+        });
+    }
+
+    return {
+        getVisits: getVisits,
+        getReference: getReference
+    };
+}
